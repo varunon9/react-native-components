@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 // don't do import { Text } from './index' to avoid require cycle
 import Text from './Text';
 import { normalizeFontSize } from './util';
-import { COLORS } from './colors';
 
 const HEADING_TYPES = {
   H1: 'h1',
@@ -16,11 +15,7 @@ const HEADING_TYPES = {
 const Heading = props => {
   const { style, type, children, ...remainingProps } = props;
 
-  const headingStyles = [
-    {
-      color: COLORS.TEXT.MEDIUM
-    }
-  ];
+  const headingStyles = [];
   const headingProps = {};
 
   switch (type) {

@@ -7,6 +7,7 @@ import Card from './Card';
 import CardItem from './CardItem';
 import Divider from './Divider';
 import ListItem from './ListItem';
+import VideoPlayer from './video_player/VideoPlayer';
 
 export {
   Text,
@@ -17,5 +18,6 @@ export {
   Card,
   CardItem,
   Divider,
-  ListItem
+  ListItem,
+  VideoPlayer
 };

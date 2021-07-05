@@ -12,7 +12,8 @@ const SHADOW = {
 const BACKGROUND = {
   SILVER: '#F2F2F2',
   WHITE: '#FFFFFF',
-  TRANSPARENT: 'transparent'
+  TRANSPARENT: 'transparent',
+  SEMI_TRANSPARENT: 'rgba(0, 0, 0, .5)'
 };
 
 const DIVIDER = {

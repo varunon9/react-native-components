@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { COLORS } from '../colors';
 
 export const GenericStyles = StyleSheet.create({
   fill: {
@@ -6,6 +7,10 @@ export const GenericStyles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row'
+  },
+  centerAlignedRow: {
+    flexDirection: 'row',
+    alignItems: 'center'
   },
   centerAlignedText: {
     textAlign: 'center'
@@ -23,7 +28,16 @@ export const GenericStyles = StyleSheet.create({
   mr16: {
     marginRight: 16
   },
+  mr12: {
+    marginRight: 12
+  },
   p16: {
     padding: 16
+  },
+  mt12: {
+    marginTop: 12
+  },
+  whiteText: {
+    color: COLORS.BACKGROUND.WHITE
   }
 });

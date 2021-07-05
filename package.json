@@ -32,5 +32,6 @@
   "homepage": "https://github.com/goibibo-labs/react-native-components#readme",
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix"
-  }
+  },
+  "dependencies": {}
 }

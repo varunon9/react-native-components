@@ -1,9 +1,14 @@
 import * as React from 'react';
-import * as ReactNative from 'react-native';
+import {
+  TextProps as RNTextProps,
+  StyleProp,
+  ViewStyle,
+  ImageSourcePropType
+} from 'react-native';
 
 export function normalizeFontSize(size: number): number;
 
-type TextProps = ReactNative.TextProps & {
+type TextProps = RNTextProps & {
   bold?: boolean;
   dark?: boolean;
   light?: boolean;
@@ -26,7 +31,7 @@ export const NavigationHeader: React.FC<{
   style?: Array<object> | object | number;
 }>;
 
-type IconProps = ReactNative.TextProps & {
+type IconProps = RNTextProps & {
   name: string;
   size?: number;
   color?: string;
@@ -67,3 +72,10 @@ type ListItemProps = CardProps & {
   onPress: () => void;
 };
 export const ListItem: React.FC<ListItemProps>;
+
+type VideoPlayerProps = {
+  containerStyle?: StyleProp<ViewStyle>;
+  style?: StyleProp<ViewStyle>;
+  source: ImageSourcePropType;
+};
+export const VideoPlayer: React.FC<VideoPlayerProps>;
